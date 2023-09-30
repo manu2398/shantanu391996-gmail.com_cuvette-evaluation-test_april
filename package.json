@@ -4,7 +4,8 @@
   "description": "A marketplace for buying audio headsets",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js"
   },
   "keywords": [
     "express",

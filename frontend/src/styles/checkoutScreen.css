@@ -1,0 +1,136 @@
+.checkout__container {
+  display: flex;
+  /* background-color: pink; */
+  margin-top: 60px;
+}
+
+.checkout__container__left {
+  flex: 3;
+}
+
+.checkout__container__left__list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px;
+}
+
+.checkout__container__left__list__item > h4 {
+  color: #b52b00;
+  font-size: 20px;
+}
+
+.checkout__container__left__list__item > p {
+  color: #797979;
+}
+
+.checkout__container__left__list__item p {
+  width: 220px;
+}
+
+.checkout__heading {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.checkout__products {
+  height: 300px;
+  overflow: scroll;
+}
+
+.checkout__bottombox {
+  display: flex;
+  align-items: start;
+  border: 2px solid #e1e1e1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.checkout__bottombox__right {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.checkout__bottombox__button {
+  padding: 10px 20px;
+  margin-right: 0px;
+  background-color: #ffd600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout__bottombox__h4 {
+  color: #b52b00;
+}
+
+.checkout__bottombox__p {
+  font-size: 10px;
+  margin: 5px 0px;
+}
+
+.checkout__container__right {
+  padding: 20px;
+  margin-left: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e1e1e1;
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+.checkout__container__right h3 {
+  margin: 10px 0px;
+}
+
+.checkout__right__items {
+  color: #797979;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout__right__items p {
+  font-size: 14px;
+  padding: 3px 0px;
+}
+
+.addPadding {
+  margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .checkout__container__right {
+    display: none;
+  }
+
+  .checkout__container__left__list__item {
+    display: block;
+  }
+
+  .checkout__container__left__list__item > h4 {
+    margin-bottom: 10px;
+  }
+  .checkout__container__left {
+    flex: 1;
+  }
+  .checkout__container {
+    margin-top: 20px;
+  }
+  .checkout__products {
+    height: 220px;
+  }
+  .checkout__bottombox {
+    display: block;
+  }
+  .checkout__bottombox__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .checkout__bottombox__p {
+    display: none;
+  }
+  .checkout__bottombox__h4 {
+    text-align: center;
+  }
+}

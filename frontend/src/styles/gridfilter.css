@@ -1,0 +1,92 @@
+.gridfilter {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.gridfilter__icon {
+  font-size: 20px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.space_right {
+  margin-right: 15px;
+}
+
+.filter__container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 40px 0px;
+}
+
+.filterbutton__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterbutton__container div:last-child {
+  border: 1px solid #e1e1e1;
+  background: white;
+  margin-left: auto;
+}
+
+.filterbutton {
+  padding: 5px 15px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.filterbutton > select {
+  /* Resetting padding and margin */
+  padding: 0;
+  margin: 0;
+  /* width: 100%; */
+  /* Resetting border */
+  border: none;
+
+  /* Resetting background-color */
+  background-color: transparent;
+
+  /* Resetting font styles */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.filterbutton > select:focus {
+  outline: none;
+}
+
+.filterbutton p {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 450px) {
+  .gridfilter {
+    display: none;
+  }
+
+  .filterbutton {
+    border-radius: 5px;
+  }
+
+  .filterbutton > select {
+    font-size: 13px;
+  }
+
+  .filter__container {
+    margin: 20px 0px;
+  }
+  .filterbutton__container {
+    overflow-y: scroll;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+}
